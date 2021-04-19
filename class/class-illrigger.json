@@ -1,0 +1,708 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Illrigger",
+				"abbreviation": "IL",
+				"full": "Illrigger",
+				"authors": [
+					"MCDM"
+				],
+				"version": "1.0.0",
+				"url": "https://shop.mcdmproductions.com/products/illrigger-class",
+				"targetSchema": "1.0.0"
+			}
+		]
+	},
+	"class": [
+		{
+			"name": "Illrigger",
+			"source": "Illrigger",
+			"page": 6,
+			"srd": false,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"con",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "1/2",
+			"preparedSpells": "<$level$> / 2 + <$cha_mod$>",
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"{@item shield|phb|shields}"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"athletics",
+								"deception",
+								"insight",
+								"intimidation",
+								"investigation",
+								"persuasion",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+					"(a) five {@item javelin|phb|javelins} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
+					"(a) a {@item priest's pack|phb} or (b) an {@item dungeoneer's pack|phb}",
+					"{@item Chain mail|phb} and a {@item holy symbol|phb}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "javelin|phb",
+								"quantity": 5
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee"
+							}
+						]
+					},
+					{
+						"a": [
+							"priest's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"Chain mail|phb",
+							"holy symbol|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"str": 13,
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"{@item shield|phb|shields}"
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"classFeatures": [
+				"Forked Tongue|Illrigger|Illrigger|1",
+				"Infernal Conduit|Illrigger|Illrigger|1",
+				"Baleful Interdict|Illrigger|Illrigger|2",
+				"Fighting Style|Illrigger|Illrigger|2",
+				"Hellsight|Illrigger|Illrigger|3",
+				{
+					"classFeature": "Diabolic Contract|Illrigger|Illrigger|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Illrigger|PHB|4",
+				"Extra Attack|Illrigger|PHB|5",
+				{
+					"classFeature": "Baleful Interdict Improvement|Illrigger|Illrigger|6",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "Diabolic Contract Improvement|Illrigger|Illrigger|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Illrigger|PHB|8",
+				{
+					"classFeature": "Diabolic Contract Improvement|Illrigger|Illrigger|9",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "Baleful Interdict Improvement|Illrigger|Illrigger|10",
+					"gainSubclassFeature": true
+				},
+				"Improved Infernal Conduit|Illrigger|Illrigger|11",
+				"Ability Score Improvement|Illrigger|PHB|12",
+				{
+					"classFeature": "Diabolic Contract Improvement|Illrigger|Illrigger|13",
+					"gainSubclassFeature": true
+				},
+				"Aura of Despair|Illrigger|Illrigger|14",
+				"Summon Hell|Illrigger|Illrigger|15",
+				"Ability Score Improvement|Illrigger|PHB|16",
+				{
+					"classFeature": "Diabolic Contract Improvement|Illrigger|Illrigger|17",
+					"gainSubclassFeature": true
+				},
+				{
+					"classFeature": "Baleful Interdict Improvement|Illrigger|Illrigger|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Illrigger|PHB|19",
+				{
+					"classFeature": "Diabolic Contract Improvement|Illrigger|Illrigger|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"subclassTitle": "Diabolic Contract",
+			"subclasses": [
+				{
+					"name": "Painkiller",
+					"shortName": "Painkiller",
+					"source": "Illrigger",
+					"page": 10,
+					"srd": false,
+					"subclassFeatures": [
+						"Contract with Dispater|Illrigger|Illrigger|Painkiller|Illrigger|3",
+						"Interdict Improvements - I Am Death|Illrigger|Illrigger|Painkiller|Illrigger|6",
+						"By the Throat|Illrigger|Illrigger|Painkiller|Illrigger|7",
+						"Telekinetic Seal|Illrigger|Illrigger|Painkiller|Illrigger|9",
+						"Interdict Improvements - Hell's Fury|Illrigger|Illrigger|Painkiller|Illrigger|10",
+						"You Die On My Command|Illrigger|Illrigger|Painkiller|Illrigger|13",
+						"Steelmind|Illrigger|Illrigger|Painkiller|Illrigger|17",
+						"Interdict Improvements - Deathstrike|Illrigger|Illrigger|Painkiller|Illrigger|18",
+						"Pain Devil|Illrigger|Illrigger|Painkiller|Illrigger|20"
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Forked Tongue",
+			"source": "Illrigger",
+			"page": 7,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 1,
+			"entries": [
+				"You have a facility with speech and know how to manipulate an audience. Whenever you make an ability check to persuade, deceive, or intimidate, you can treat a d20 roll of 7 or lower as an 8.",
+				"Additionally you learn the Infernal language."
+			]
+		},
+		{
+			"name": "Infernal Conduit",
+			"source": "Illrigger",
+			"page": 7,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 1,
+			"entries": [
+				"There is a pool of infernal power within you that replenishes after you take a long rest. This pool is represented by dice, starting with 1d10 at 1st level. Your pool gains dice as shown on the Illrigger table. With these dice you can transfer hit points between your illrigger and other targets, healing allies at the expense of your own health or draining the life force of enemies to rejuvenate your own vitality.",
+				"As an action, choose a number of dice from your remaining pool and touch another creature. If they are unwilling, this is a melee spell attack with which you are proficient, using Charisma as your spell- casting ability. If you miss, nothing happens—you do not roll or lose dice from your pool. If you hit, or if you’re targeting a willing creature, roll the chosen dice.",
+				"The result of your roll is the number of hit points you transfer. If you’re touching an ally, they gain that many hit points, ignoring any hit points in excess of their maximum. You lose hit points equal to the number of hit points they gained. If your sacrifice reduces you to 0 hit points, you fall unconscious.",
+				"If you’re touching an enemy, they take necrotic damage equal to your roll, and you gain that many hit points. If you would gain hit points in excess of your maximum, you gain that number of temporary hit points instead.",
+				"Beginning at 11th level, in addition to draining the life force of an enemy, you can also inflict one level of exhaustion on them. They may recover this exhaustion normally. This ability does not work if the target already has three or more levels of exhaustion, or if you have no dice left in your pool, and you cannot choose to inflict exhaustion instead of draining life."
+			]
+		},
+		{
+			"name": "Baleful Interdict",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 2,
+			"entries": [
+				"When you reach 2nd level, you learn to use the power of Hell to censure other creatures. As a bonus action, you can place a seal on a target you can see within 30 feet. You can do this a number of times equal to your Charisma modifier. When you finish a short or long rest, you regain all your seals.",
+				"When you or an ally hits a target you can see with any seals on it, you can consume the seals to make the attack deal an extra 2d6 necrotic damage to the target per seal consumed.1 If you are within 30 feet of the target, you regain 2 hit points for each die of damage your seals deals.",
+				"A creature with a seal on them is an interdicted creature.",
+				"Seals evaporate if not used after 1 minute. Only the illrigger who placed the seal knows it’s there; it appears to the illrigger as a glowing glyph on the creature’s forehead. If a creature with any of your seals on it dies, you can move all of its seals to another creature within range.",
+				"When you reach 10th level, you feel your connec- tion to your archdevil increase. Your seals deal an extra 1d6 damage.",
+				"Your seals improve differently based on which contract you choose. These improvements are listed under “Diabolic Contract” below."
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you choose an illrigger fighting style:",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+					]
+				}
+			]
+		},
+		{
+			"name": "Hellsight",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"When you reach 3rd level, your mastery of deception makes it easy for you to recognize the use of concealing sorcery. As an action, you extend your awareness out from you. Until the end of your next turn, you know the location of creatures within 60 feet using magic to hide or disguise themselves.",
+				"You can use this feature a number of times equal to your Charisma modifier. When you finish a long rest, you regain your expended uses."
+			]
+		},
+		{
+			"name": "Diabolic Contract",
+			"source": "Illrigger",
+			"page": 9,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"When you reach 3rd level, you swear the oath that binds you as a Illrigger forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose from the list of available oaths.",
+				"Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.",
+				{
+					"name": "Invoke Authority",
+					"type": "entries",
+					"entries": [
+						"Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.",
+						"When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.",
+						"Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your Illrigger spell save DC."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 82,
+			"srd": true,
+			"className": "Illrigger",
+			"classSource": "PHB",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "PHB",
+			"page": 82,
+			"srd": true,
+			"className": "Illrigger",
+			"classSource": "PHB",
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"name": "Baleful Interdict Improvement",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted to you by your Diabolic Contract."
+			]
+		},
+		{
+			"name": "Diabolic Contract Improvement",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 7,
+			"entries": [
+				"At 7th level, you gain a feature granted to you by your Diabolic Contract."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 82,
+			"srd": true,
+			"className": "Illrigger",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Diabolic Contract Improvement",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 9,
+			"entries": [
+				"At 9th level, you gain a feature granted to you by your Diabolic Contract."
+			]
+		},
+		{
+			"name": "Baleful Interdict Improvement",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain a feature granted to you by your Diabolic Contract."
+			]
+		},
+		{
+			"name": "Improved Infernal Conduit",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 11,
+			"entries": [
+				"At 11th level, in addition to draining the life force of an enemy, you can also inflict one level of exhaustion on them. They may recover this exhaustion normally. This ability does not work if the target already has three or more levels of exhaustion, or if you have no dice left in your pool, and you cannot choose to inflict exhaustion instead of draining life."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 82,
+			"srd": true,
+			"className": "Illrigger",
+			"classSource": "PHB",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Diabolic Contract Improvement",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 13,
+			"entries": [
+				"At 13th level, you gain a feature granted to you by your Diabolic Contract."
+			]
+		},
+		{
+			"name": "Aura of Despair",
+			"source": "Illrigger",
+			"page": 9,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 14,
+			"entries": [
+				"Beginning at 14th level, you radiate a magical aura of evil. Whenever a hostile creature within 15 feet of you makes an attack roll or a saving throw, it must roll a d4 and subtract the number rolled from the result."
+			]
+		},
+		{
+			"name": "Summon Hell",
+			"source": "Illrigger",
+			"page": 9,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 15,
+			"entries": [
+				"Beginning at 15th level, as an action, you can summon a bone devil to serve you for 1 minute. The devil appears in an unoccupied space within 30 feet. It is bound to you and must obey your commands to the best of its ability. It acts on the same initiative that you act on, and may both act and move on the turn you summon it. If you die or fall unconscious, the devil returns to Hell. Once you use this feature, you must wait 1 week before you can use it again."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 82,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "PHB",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Diabolic Contract Improvement",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain a feature granted to you by your Diabolic Contract."
+			]
+		},
+		{
+			"name": "Baleful Interdict Improvement",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature granted to you by your Diabolic Contract."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "PHB",
+			"page": 82,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "PHB",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Diabolic Contract Improvement",
+			"source": "Illrigger",
+			"page": 8,
+			"srd": false,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 20,
+			"entries": [
+				"At 20th level, you gain a feature granted to you by your Diabolic Contract."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Painkiller",
+			"source": "Illrigger",
+			"page": 9,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"Dispater is the Lord of Dis, the City of War. When Hell invades another world, Dispater’s army does the fighting and the dying. His Painkillers are master strategists who lead from the front, inspiring terror and awe in their soldiers. They are full of pride and hubris and present themselves as lordly, often having a fastidious obsession with their personal appearance",
+				"The Painkillers are among the most chivalrous of the illriggers, but theirs is a twisted chivalry. They will accept and honor a challenge to single combat, and swiftly punish any who try to interfere. But they will cheat if losing and toy with an enemy before finishing them if winning.",
+				"In a moment of weakness or desperation, a ruler in another World might see their army facing certain defeat and call upon Dispater. Seeing the opportunity to sow strife and discord, Dispater might send a Painkiller to lead the desperate lord’s armies.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Contract with Dispater|Illrigger|Illrigger|Painkiller|Illrigger|3"
+				}
+			]
+		},
+		{
+			"name": "Contract with Dispater",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"Dispater’s heavy shock troops must be effective battlefield commanders, and quickly dispatch enemies.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Invoke Authority: Devastator|Illrigger|Illrigger|Painkiller|Illrigger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Invoke Authority: Infernal Surge|Illrigger|Illrigger|Painkiller|Illrigger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Illrigger|Illrigger|Painkiller|Illrigger|3"
+				}
+			]
+		},
+		{
+			"name": "Invoke Authority: Devastator",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"As an action, you invoke the authority of Dispater. A number of allies equal to your Charisma modifier, whom you can see within 60 feet, and you, may use a reaction to make one weapon attack."
+			]
+		},
+		{
+			"name": "Invoke Authority: Infernal Surge",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"Upon invoking Dispater’s authority, you gain an extra action in addition to your normal action and any possible bonus action."
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"When you choose Dispater as your archdevil, you gain proficiency with heavy armor."
+			]
+		},
+		{
+			"name": "Interdict Improvements - I Am Death",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 6,
+			"entries": [
+				"At 6th level, after placing a seal on a creature, your attacks against that creature have advantage until the end of your turn."
+			]
+		},
+		{
+			"name": "By the Throat",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 7,
+			"entries": [
+				"Starting at 7th level, you can, as an action, place a seal on an enemy within 30 feet. If they are Large or smaller, they must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or be grappled (escape DC 15), and the target is restrained until the grapple ends."
+			]
+		},
+		{
+			"name": "Telekinetic Seal",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 9,
+			"entries": [
+				"Starting at 9th level, you can, as a reaction to an enemy moving into a space adjacent to you, place a seal on them. If you do, they must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier). If they fail, they are thrown back 30 feet and knocked prone."
+			]
+		},
+		{
+			"name": "Interdict Improvements - Hell's Fury",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 10,
+			"entries": [
+				"At 10th level, the bonus action you use to place a seal on a creature now also grants you a weapon attack against them."
+			]
+		},
+		{
+			"name": "You Die On My Command",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 13,
+			"entries": [
+				"Starting at 13th level, when an ally within 30 feet who can hear you drops to 0 hit points but is not outright killed, you can use your reaction to shout an order at them, causing them to drop to 1 hit point instead. You cannot use this feature again until you complete a short or long rest."
+			]
+		},
+		{
+			"name": "Steelmind",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 17,
+			"entries": [
+				"Starting at 17th level, you gain advantage on Wisdom saving throws against spells and enemy abilities."
+			]
+		},
+		{
+			"name": "Interdict Improvements - Deathstrike",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 18,
+			"entries": [
+				"At 18th level, when you consume a seal after a successful attack roll against an interdicted creature, you may use your reaction to make the attack score a critical hit."
+			]
+		},
+		{
+			"name": "Pain Devil",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 20,
+			"entries": [
+					"Starting at 20th level, you can use your action to become a pain devil for 1 minute. Your size becomes Large. You gain +3 to hit and damage with melee weapons. You gain 100 temporary hit points.",
+					"You emanate an aura of pain that forces every enemy starting their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 force damage on a failed save (half that on a successful saving throw) as wounds in their flesh spontaneously open. Once a creature saves, they are immune to this ability for 24 hours.",
+					"While in this form, your type becomes fiend (devil) and Hell is your home plane. You cannot use this feature again until you complete a long rest."
+			]
+		}
+	]
+}
