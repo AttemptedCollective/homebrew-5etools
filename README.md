@@ -3,7 +3,11 @@ A repository of homebrew stuff converted for 5etools
 
 # To-Do
 - [ ] Illrigger
-  - [ ] Base Class
-  - [ ] Base Class Featues
-  - [ ] Subclass (Painkiller)
-  - [ ] Subclass Features (Painkiller)
+  - [x] Base Class
+  - [x] Base Class Featues
+  - [x] Subclass (Painkiller)
+  - [x] Subclass Features (Painkiller)
+  - [ ] Subclass (Shadowmaster)
+  - [ ] Subclass Features (Shadowmaster)
+  - [ ] Subclass (Archetect of Ruin)
+  - [ ] Subclass Features (Archetect of Ruin)
