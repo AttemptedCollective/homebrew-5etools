@@ -149,6 +149,35 @@
 					]
 				}
 			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Infernal Conduit Dice"
+					],
+					"rows": [
+						[ 1 ],
+						[ 1 ],
+						[ 2 ],
+						[ 2 ],
+						[ 3 ],
+						[ 3 ],
+						[ 4 ],
+						[ 4 ],
+						[ 5 ],
+						[ 5 ],
+						[ 6 ],
+						[ 6 ],
+						[ 7 ],
+						[ 7 ],
+						[ 8 ],
+						[ 8 ],
+						[ 9 ],
+						[ 9 ],
+						[ 10 ],
+						[ 10 ]
+					]
+				}
+			],
 			"classFeatures": [
 				"Forked Tongue|Illrigger|Illrigger|1",
 				"Infernal Conduit|Illrigger|Illrigger|1",
