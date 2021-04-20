@@ -265,6 +265,22 @@
 					"type": "options",
 					"count": 1,
 					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Treachery|Illrigger"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Bravado|Illrigger"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Schemes|Illrigger"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Lies|Illrigger"
+						}
 					]
 				}
 			]
@@ -699,9 +715,55 @@
 			"subclassSource": "Illrigger",
 			"level": 20,
 			"entries": [
-					"Starting at 20th level, you can use your action to become a pain devil for 1 minute. Your size becomes Large. You gain +3 to hit and damage with melee weapons. You gain 100 temporary hit points.",
-					"You emanate an aura of pain that forces every enemy starting their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 force damage on a failed save (half that on a successful saving throw) as wounds in their flesh spontaneously open. Once a creature saves, they are immune to this ability for 24 hours.",
-					"While in this form, your type becomes fiend (devil) and Hell is your home plane. You cannot use this feature again until you complete a long rest."
+				"Starting at 20th level, you can use your action to become a pain devil for 1 minute. Your size becomes Large. You gain +3 to hit and damage with melee weapons. You gain 100 temporary hit points.",
+				"You emanate an aura of pain that forces every enemy starting their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 force damage on a failed save (half that on a successful saving throw) as wounds in their flesh spontaneously open. Once a creature saves, they are immune to this ability for 24 hours.",
+				"While in this form, your type becomes fiend (devil) and Hell is your home plane. You cannot use this feature again until you complete a long rest."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Treachery",
+			"source": "Illrigger",
+			"page": 8,
+			"featureType": [
+				"OR"
+			],
+			"entries": [
+				"When you attack an enemy who has none of your allies adjacent to it, you gain a +3 bonus to damage rolls."
+			]
+		},
+		{
+			"name": "Bravado",
+			"source": "Illrigger",
+			"page": 8,
+			"featureType": [
+				"OR"
+			],
+			"entries": [
+				"While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier. You can use a shield and still gain this benefit."
+			]
+		},
+		{
+			"name": "Schemes",
+			"source": "Illrigger",
+			"page": 8,
+			"featureType": [
+				"OR"
+			],
+			"entries": [
+				"While you wield a melee weapon in one hand and no other weapons, you can use your reaction after an adjacent enemy attacks you to move into any other unoccupied space within five feet of the attacking enemy. This movement does not provoke an opportunity attack."
+			]
+		},
+		{
+			"name": "Lies",
+			"source": "Illrigger",
+			"page": 8,
+			"featureType": [
+				"OR"
+			],
+			"entries": [
+				"When you attack with a two-handed melee weapon, you can use your Charisma modifier, instead of your Strength modifier, for both the attack and damage rolls."
 			]
 		}
 	]
