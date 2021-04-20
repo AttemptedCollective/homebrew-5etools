@@ -19,7 +19,7 @@
 			"name": "Illrigger",
 			"source": "Illrigger",
 			"page": 6,
-			"srd": false,
+			"srd": true,
 			"hd": {
 				"number": 1,
 				"faces": 10
@@ -236,7 +236,7 @@
 					"shortName": "Painkiller",
 					"source": "Illrigger",
 					"page": 10,
-					"srd": false,
+					"srd": true,
 					"subclassFeatures": [
 						"Contract with Dispater|Illrigger|Illrigger|Painkiller|Illrigger|3",
 						"Interdict Improvements - I Am Death|Illrigger|Illrigger|Painkiller|Illrigger|6",
@@ -257,7 +257,7 @@
 			"name": "Forked Tongue",
 			"source": "Illrigger",
 			"page": 7,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 1,
@@ -270,7 +270,7 @@
 			"name": "Infernal Conduit",
 			"source": "Illrigger",
 			"page": 7,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 1,
@@ -286,7 +286,7 @@
 			"name": "Baleful Interdict",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 2,
@@ -303,7 +303,7 @@
 			"name": "Fighting Style",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 2,
@@ -337,7 +337,7 @@
 			"name": "Hellsight",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 3,
@@ -350,7 +350,7 @@
 			"name": "Diabolic Contract",
 			"source": "Illrigger",
 			"page": 9,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 3,
@@ -397,7 +397,7 @@
 			"name": "Baleful Interdict Improvement",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 6,
@@ -409,7 +409,7 @@
 			"name": "Diabolic Contract Improvement",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 7,
@@ -434,7 +434,7 @@
 			"name": "Diabolic Contract Improvement",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 9,
@@ -446,7 +446,7 @@
 			"name": "Baleful Interdict Improvement",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 10,
@@ -458,7 +458,7 @@
 			"name": "Improved Infernal Conduit",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 11,
@@ -483,7 +483,7 @@
 			"name": "Diabolic Contract Improvement",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 13,
@@ -495,7 +495,7 @@
 			"name": "Aura of Despair",
 			"source": "Illrigger",
 			"page": 9,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 14,
@@ -507,7 +507,7 @@
 			"name": "Summon Hell",
 			"source": "Illrigger",
 			"page": 9,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 15,
@@ -519,7 +519,7 @@
 			"name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 82,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "PHB",
 			"level": 16,
@@ -532,7 +532,7 @@
 			"name": "Diabolic Contract Improvement",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 17,
@@ -544,7 +544,7 @@
 			"name": "Baleful Interdict Improvement",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 18,
@@ -556,7 +556,7 @@
 			"name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 82,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "PHB",
 			"level": 19,
@@ -569,7 +569,7 @@
 			"name": "Diabolic Contract Improvement",
 			"source": "Illrigger",
 			"page": 8,
-			"srd": false,
+			"srd": true,
 			"className": "Illrigger",
 			"classSource": "Illrigger",
 			"level": 20,
@@ -812,6 +812,80 @@
 			],
 			"entries": [
 				"When you attack with a two-handed melee weapon, you can use your Charisma modifier, instead of your Strength modifier, for both the attack and damage rolls."
+			]
+		}
+	],
+	"foundryClassFeature": [
+		{
+			"name": "Forked Tongue",
+			"source": "Illrigger",
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 1,
+			"actorDataMod": {
+				"traits.languages.value": [
+					{
+						"mode": "appendIfNotExistsArr",
+						"items": [
+							"infernal"
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Baleful Interdict",
+			"source": "Illrigger",
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"level": 2,
+			"data": {
+				"actionType": "other",
+				"damage.parts": [
+					[
+						"(@classes.illrigger.levels >= 10 ? 3 : 2)d(@classes.illrigger.subclass == Shadowmaster && @classes.illrigger.levels >= 18 ? 10 : 6)",
+						"necrotic"
+					]
+				],
+				"uses": {
+					"value": "@abilities.cha.mod",
+					"max": "@abilities.cha.mod",
+					"per": "sr"
+				}
+			}
+		}
+	],
+	"foundryOptionalFeature": [
+		{
+			"name": "Treachery",
+			"source": "Illrigger",
+			"level": 2,
+			"effects": [
+				{
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bravado",
+			"source": "Illrigger",	
+			"level": 2,
+			"effects": [
+				{
+					"changes": [
+						{
+							"key": "data.attributes.ac.value",
+							"mode": "OVERRIDE",
+							"value": "10 + @abilities.dex.mod + @abilities.cha.mod"
+						}
+					]
+				}
 			]
 		}
 	]
