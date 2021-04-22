@@ -248,6 +248,24 @@
 						"Interdict Improvements - Deathstrike|Illrigger|Illrigger|Painkiller|Illrigger|18",
 						"Pain Devil|Illrigger|Illrigger|Painkiller|Illrigger|20"
 					]
+				},
+				{
+					"name": "Shadowmaster",
+					"shortName": "Shadowmaster",
+					"source": "Illrigger",
+					"page": 10,
+					"srd": true,
+					"subclassFeatures": [
+						"Contract with Moloch|Illrigger|Illrigger|Shadowmaster|Illrigger|3",
+						"Interdict Improvements - Marked for Death|Illrigger|Illrigger|Shadowmaster|Illrigger|6",
+						"Relentless|Illrigger|Illrigger|Shadowmaster|Illrigger|7",
+						"Only A Memory|Illrigger|Illrigger|Shadowmaster|Illrigger|9",
+						"Interdict Improvements - He Is the Darkness|Illrigger|Illrigger|Shadowmaster|Illrigger|10",
+						"Evasion|Illrigger|Illrigger|Shadowmaster|Illrigger|13",
+						"Shadowkiller|Illrigger|Illrigger|Shadowmaster|Illrigger|17",
+						"Interdict Improvements - Hell’s Assassin|Illrigger|Illrigger|Shadowmaster|Illrigger|18",
+						"Shadowform|Illrigger|Illrigger|Shadowmaster|Illrigger|20"
+					]
 				}
 			]
 		}
@@ -262,7 +280,7 @@
 			"classSource": "Illrigger",
 			"level": 1,
 			"entries": [
-				"You have a facility with speech and know how to manipulate an audience. Whenever you make an ability check to persuade, deceive, or intimidate, you can treat a d20 roll of 7 or lower as an 8.",
+				"You have a facility with speech and know how to manipulate an audience. Whenever you make an ability check to use {@skill Persuasion}, {@skill Deception}, or {@skill Intimidation}, you can treat a d20 roll of 7 or lower as an 8.",
 				"Additionally you learn the Infernal language."
 			]
 		},
@@ -361,9 +379,8 @@
 					"name": "Invoke Authority",
 					"type": "entries",
 					"entries": [
-						"Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.",
-						"When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.",
-						"Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your Illrigger spell save DC."
+						"You invoke the authority granted you by your archdevil, channelling baleful energy to fuel magical effects. Each Invoke Authority option provided by your archdevil explains how to use it. ",
+						"When you use your Invoke Authority, you choose which option to use. Once you use this feature, you must finish a long rest to use it again."
 					]
 				}
 			]
@@ -685,7 +702,7 @@
 			"subclassSource": "Illrigger",
 			"level": 7,
 			"entries": [
-				"Starting at 7th level, you can, as an action, place a seal on an enemy within 30 feet. If they are Large or smaller, they must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or be grappled (escape DC 15), and the target is restrained until the grapple ends."
+				"Starting at 7th level, you can, as an action, place a seal on an enemy within 30 feet. If they are Large or smaller, they must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Charisma modifier) or be {@condition grappled} (escape DC 15), and the target is {@condition restrained} until the grapple ends."
 			]
 		},
 		{
@@ -767,6 +784,228 @@
 				"You emanate an aura of pain that forces every enemy starting their turn within 20 feet of you to make a DC 16 Constitution saving throw or suffer 4d12 force damage on a failed save (half that on a successful saving throw) as wounds in their flesh spontaneously open. Once a creature saves, they are immune to this ability for 24 hours.",
 				"While in this form, your type becomes fiend (devil) and Hell is your home plane. You cannot use this feature again until you complete a long rest."
 			]
+		},
+		{
+			"name": "Shadowmaster",
+			"source": "Illrigger",
+			"page": 9,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"Dispater is the Lord of Dis, the City of War. When Hell invades another world, Dispater’s army does the fighting and the dying. His Shadowmasters are master strategists who lead from the front, inspiring terror and awe in their soldiers. They are full of pride and hubris and present themselves as lordly, often having a fastidious obsession with their personal appearance",
+				"The Shadowmasters are among the most chivalrous of the illriggers, but theirs is a twisted chivalry. They will accept and honor a challenge to single combat, and swiftly punish any who try to interfere. But they will cheat if losing and toy with an enemy before finishing them if winning.",
+				"In a moment of weakness or desperation, a ruler in another World might see their army facing certain defeat and call upon Dispater. Seeing the opportunity to sow strife and discord, Dispater might send a Shadowmaster to lead the desperate lord’s armies.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Contract with Moloch|Illrigger|Illrigger|Shadowmaster|Illrigger|3"
+				}
+			]
+		},
+		{
+			"name": "Contract with Moloch",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"Moloch’s elite assassins must be able tosurvive to get close to their enemies andquickly eliminate them.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Invoke Authority: Fade|Illrigger|Illrigger|Shadowmaster|Illrigger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Invoke Authority: Moloch's Blessing|Illrigger|Illrigger|Shadowmaster|Illrigger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Flash of Brimstone|Illrigger|Illrigger|Shadowmaster|Illrigger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Illrigger|Illrigger|Shadowmaster|Illrigger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dagger Adept|Illrigger|Illrigger|Shadowmaster|Illrigger|3"
+				}
+			]
+		},
+		{
+			"name": "Invoke Authority: Fade",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"As an action, you canbecome invisible and can, as part of this action, attempt to take the Hide action. The invisibility ends after 1 minute or if you make an attack orcast a spell."
+			]
+		},
+		{
+			"name": "Invoke Authority: Moloch's Blessing",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"As a bonus action, you can place all your remaining seals on a creature."
+			]
+		},
+		{
+			"name": "Flash of Brimstone",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"As a reaction to placing a seal on a target, you can teleport to an unoccupied space that you can see adjacent to the target. "
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"When you choose Moloch as your archdevil, you gain proficiency with Stealth, Acrobatics, and thieves’ tools."
+			]
+		},
+		{
+			"name": "Dagger Adept",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"entries": [
+				"Your training makes you skilled with certain light weapons. While two-weapon fighting with dagger sand/or sickles, you can add your ability modifier to the damage of the second attack, and you can draw or stow two daggers or sickles when you would normally be able to draw or stow only one.",
+				"At 5th level, your daggers and sickles do 1d6 damage. At 11th level, your daggers and sickles do 1d8 damage. At 17th level, your daggers and sickles do 1d10 damage."
+			]
+		},
+		{
+			"name": "Interdict Improvements - Marked for Death",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 6,
+			"entries": [
+				"At 6th level, your connection to Moloch’s power deepens. If you hit an interdicted creature with a melee attack, you can mark them for death. The target has disadvantage on attack rolls that do not include you until the end of its next turn. While that creature is interdicted, it must make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) whenever it tries to leave your reach. On a failure, its speed instead becomes 0 until the start of its next turn. These effects last until it is no longer interdicted, you leave its reach, or it leaves your reach."
+			]
+		},
+		{
+			"name": "Relentless",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 7,
+			"entries": [
+				"At 7th level, your movement increases by 10 feet."
+			]
+		},
+		{
+			"name": "Only A Memory",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 9,
+			"entries": [
+				"Starting at 9th level, your mastery of shadow grants you advantage on Dexterity (Stealth) checks when taking the Hide action, and Hide becomes a bonus action for you."
+			]
+		},
+		{
+			"name": "Interdict Improvements - He Is the Darkness",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 10,
+			"entries": [
+				"At 10th level, while within 10 feet of an interdicted enemy, shadows envelop you and you gain the benefits of half cover."
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 13,
+			"entries": [
+				"Starting at 13th level, when you are prompted to make a Dexterity saving throw to take only half damage from an effect, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+			]
+		},
+		{
+			"name": "Shadowkiller",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain darkvision and can see normally in magical darkness. In addition you can see the exact location of any creatures within 60 feet using illusion spells to obfuscate their location, such as blur, mirror image, or invisibility."
+			]
+		},
+		{
+			"name": "Interdict Improvements - Hell’s Assassin",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 18,
+			"entries": [
+				"At 18th level, your seals do 3d10 damage each, rather than 3d6."
+			]
+		},
+		{
+			"name": "Shadowform",
+			"source": "Illrigger",
+			"page": 11,
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Shadowmaster",
+			"subclassSource": "Illrigger",
+			"level": 20,
+			"entries": [
+				"Starting at 20th level, as an action, you can become a greater shadow for 1 minute. You gain damage resistance to acid, cold, fire, lightning, thunder, bludgeoning, piercing, and slashing damage. You gain Incorporeal Movement and a flying speed of 50 feet. You can move through other creatures and objects as if they were difficult terrain. You take 5 (1d10) force damage if you end your turn inside an object. Your weapon attacks deal necrotic damage, and successful attacks drain 1d4 Strength from the target. If this drain reduces the target’s Strength to 0, it dies. Otherwise, the drain lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later. You cannot use this feature again until you complete a long rest."
+			]
 		}
 	],
 	"optionalfeature": [
@@ -779,6 +1018,17 @@
 			],
 			"entries": [
 				"When you attack an enemy who has none of your allies adjacent to it, you gain a +3 bonus to damage rolls."
+			],
+			"effects": [
+				{
+					"changes": [
+						{
+							"key": "data.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": "3"
+						}
+					]
+				}
 			]
 		},
 		{
@@ -855,38 +1105,42 @@
 			}
 		}
 	],
-	"foundryOptionalFeature": [
+	"foundrySubclassFeatures": [
 		{
-			"name": "Treachery",
+			"name": "Invoke Authority: Devastator",
 			"source": "Illrigger",
-			"level": 2,
-			"effects": [
-				{
-					"changes": [
-						{
-							"key": "data.bonuses.mwak.damage",
-							"mode": "ADD",
-							"value": "3"
-						}
-					]
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"data": {
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "lr"
+				},
+				"activation": {
+					"type": "reaction",
+					"cost": 1
 				}
-			]
+			}
 		},
 		{
-			"name": "Bravado",
-			"source": "Illrigger",	
-			"level": 2,
-			"effects": [
-				{
-					"changes": [
-						{
-							"key": "data.attributes.ac.value",
-							"mode": "OVERRIDE",
-							"value": "10 + @abilities.dex.mod + @abilities.cha.mod"
-						}
-					]
+			"name": "Invoke Authority: Infernal Surge",
+			"source": "Illrigger",
+			"className": "Illrigger",
+			"classSource": "Illrigger",
+			"subclassShortName": "Painkiller",
+			"subclassSource": "Illrigger",
+			"level": 3,
+			"data": {
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"per": "lr"
 				}
-			]
+			}
 		}
 	]
 }
